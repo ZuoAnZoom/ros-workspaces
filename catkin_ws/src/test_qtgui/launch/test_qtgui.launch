@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<node pkg="test_qtgui" type="velocity_pub_node" name="velocity_pub" output="screen"/>
+	<node pkg="ublox_serial" type="ublox_gps_pub" name="pub_gps_data" output="screen"/>
+	<node pkg="robotcar_gui" type="robotcar_gui" name="robotcar_gui"/>
+</launch>
